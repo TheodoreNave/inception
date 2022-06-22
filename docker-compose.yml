@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  nginx:
+    image: nginx:latest
+  mysql:
+    image: mariadb
+    volumes:
+      - /data/mysql:/var/lib/mysql
+  wordpress:
+    image: wordpress:php7.3-fpm-alpine
+    volumes:
+      - /data/html:/var/www/html
+
+      #enter command docker network
+
+restart: always
