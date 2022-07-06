@@ -5,3 +5,7 @@ https://towardsdatascience.com/a-complete-guide-to-using-environment-variables-a
 # Makefile
 
 https://write.vanoix.com/emeric/makefile-et-docker-en-dev
+
+# nginx with TLS
+
+https://www.cyberciti.biz/faq/configure-nginx-to-use-only-tls-1-2-and-1-3/
