@@ -14,3 +14,9 @@ services:
       #enter command docker network
 
 restart: always
+
+env_file:
+  - .env #path .env file
+
+# MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+# Same for others value into .env
