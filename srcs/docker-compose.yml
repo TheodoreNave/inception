@@ -1,23 +1,37 @@
-version: "3.9"
+version: "3.8"
 services:
-  nginx:
-    image: nginx:inception
+  wordpress:
+    container_name: wordpress
+    image: wordpress:inception
+    build: requirements/wordpress
+    networks:
+      - docker_network
     ports:
-      - "80:80"
+      - "9000:9000"
+    volumes:
+      - wordpress_data:/var/www/html/wordpress
+
+  nginx:
+    container_name: nginx
+    image: nginx:inception
+    build: requirements/nginx
+    depends_on:
+      - wordpress
+    networks:
+      - docker_network
+    ports:
       - "443:443"
-  # mysql:
-  #   image: mariadb
-  #   volumes:
-  #     - /data/mysql:/var/lib/mysql
-  # wordpress:
-  #   image: wordpress:php7.3-fpm-alpine
-  #   volumes:
-  #     - /data/html:/var/www/html
-
-  #enter command docker network
-# restart: always
-# env_file:
-# - .env #path .env file
-
+    volumes:
+      - wordpress_data:/var/www/html/wordpress
+networks:
+  docker_network:
 # MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 # Same for others value into .env
+
+volumes:
+  wordpress_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: /Users/theodorenave/Desktop/wordpress
+      o: bind

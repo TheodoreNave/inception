@@ -1,6 +1,7 @@
 # .env
 
 https://towardsdatascience.com/a-complete-guide-to-using-environment-variables-and-files-with-docker-and-compose-4549c21dc6af
+https://betterprogramming.pub/using-variables-in-docker-compose-265a604c2006?gi=67e1fcc1417c
 
 # Makefile
 
