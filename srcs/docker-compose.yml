@@ -1,22 +1,23 @@
 version: "3.9"
 services:
   nginx:
-    image: nginx:latest
-  mysql:
-    image: mariadb
-    volumes:
-      - /data/mysql:/var/lib/mysql
-  wordpress:
-    image: wordpress:php7.3-fpm-alpine
-    volumes:
-      - /data/html:/var/www/html
+    image: nginx:inception
+    ports:
+      - "80:80"
+      - "443:443"
+  # mysql:
+  #   image: mariadb
+  #   volumes:
+  #     - /data/mysql:/var/lib/mysql
+  # wordpress:
+  #   image: wordpress:php7.3-fpm-alpine
+  #   volumes:
+  #     - /data/html:/var/www/html
 
-      #enter command docker network
-
-restart: always
-
-env_file:
-  - .env #path .env file
+  #enter command docker network
+# restart: always
+# env_file:
+# - .env #path .env file
 
 # MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 # Same for others value into .env

@@ -6,9 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Thu Jul  7 12:32:14 2022
+# Make data base, printed on Thu Jul  7 13:02:24 2022
 
 # Variables
 
@@ -39,7 +38,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 P9K_SSH = 0
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/m9/3sv3v35d5qsf8w2gs04188hc0000gn/T/vscode-ipc-e4f36c4c-62d3-4413-8669-a43570f3443b.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/m9/3sv3v35d5qsf8w2gs04188hc0000gn/T/vscode-ipc-2670b1e4-9ea3-43e6-994d-c376461be159.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -75,7 +74,7 @@ VSCODE_CODE_CACHE_PATH = /Users/tnave/Library/Application Support/Code/CachedDat
 # environment
 LOGNAME = tnave
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /Users/tnave/.oh-my-zsh
 # environment
@@ -231,7 +230,7 @@ start:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jul  7 12:32:14 2022
+# Finished Make data base on Thu Jul  7 13:02:24 2022
 
  
 make: *** No rule to make target `all'.  Stop.
