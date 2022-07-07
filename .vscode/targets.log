@@ -6,8 +6,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Wed Jul  6 16:07:27 2022
+# Make data base, printed on Thu Jul  7 12:32:14 2022
 
 # Variables
 
@@ -15,10 +16,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-LC_CTYPE = UTF-8
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -42,11 +39,11 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 P9K_SSH = 0
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/m9/3sv3v35d5qsf8w2gs04188hc0000gn/T/vscode-ipc-e029442c-2290-4213-8ed4-92fa969e09e0.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/m9/3sv3v35d5qsf8w2gs04188hc0000gn/T/vscode-ipc-e4f36c4c-62d3-4413-8669-a43570f3443b.sock
 # environment
-VSCODE_CWD = /Users/tnave/Desktop/inception
+VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.T0K2KMc4KH/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.lUiV5ZgaGt/Render
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
@@ -58,7 +55,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DbxXFA1ZGi/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.HvBWTz7uWU/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -74,8 +71,6 @@ HOME = /Users/tnave
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CLI = 1
-# environment
 VSCODE_CODE_CACHE_PATH = /Users/tnave/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LOGNAME = tnave
@@ -89,32 +84,24 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
 # environment
-LC_TERMINAL = iTerm2
-# environment
-SHLVL = 3
+SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = tnave
 # makefile
 .DEFAULT_GOAL := 
-# default
-MAKECMDGOALS := all
-# environment
-TERM_SESSION_ID = w0t0p0:B9776C45-42EB-498C-9478-C2B3985196C3
 # environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
-# environment
-TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -130,21 +117,13 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 3.4.10
-# environment
 MAIL = tnave@student.42.fr
 # environment
-XPC_SERVICE_NAME = 0
-# environment
-LC_TERMINAL_VERSION = 3.4.10
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000004.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
-# environment
-ITERM_SESSION_ID = w0t0p0:B9776C45-42EB-498C-9478-C2B3985196C3
-# environment
-COLORFGBG = 7;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
@@ -153,8 +132,6 @@ COMMAND_MODE = unix2003
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
-# environment
-ITERM_PROFILE = Default
 # makefile (from `Makefile', line 1)
 PROJECT_NAME = "Inception"
 # environment
@@ -163,8 +140,6 @@ PAGER = less
 LC_ALL = C
 # environment
 SECURITYSESSIONID = 186a8
-# environment
-P9K_TTY = old
 # automatic
 ^F = $(notdir $^)
 # default
@@ -176,13 +151,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
-_P9K_TTY = /dev/ttys000
-# environment
-VSCODE_PID = 315
+VSCODE_PID = 297
 # variable set hash-table stats:
-# Load=85/1024=8%, Rehash=0, Collisions=4/108=4%
+# Load=70/1024=7%, Rehash=0, Collisions=1/93=1%
 
 # Pattern-specific Variable Values
 
@@ -260,7 +231,7 @@ start:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jul  6 16:07:27 2022
+# Finished Make data base on Thu Jul  7 12:32:14 2022
 
  
 make: *** No rule to make target `all'.  Stop.
