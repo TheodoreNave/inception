@@ -1,10 +1,6 @@
 #!/bin/bash
 
-
-wget https://wordpress.org/latest.tar.gz
-
-tar -xf latest.tar.gz
-rm -rf latest.tar.gz
+service php7.3-fpm start
 
 
 # ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
