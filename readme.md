@@ -10,3 +10,11 @@ https://write.vanoix.com/emeric/makefile-et-docker-en-dev
 # nginx with TLS
 
 https://www.cyberciti.biz/faq/configure-nginx-to-use-only-tls-1-2-and-1-3/
+
+# prevent the container from halting
+
+https://stackoverflow.com/questions/18861300/how-to-run-nginx-within-a-docker-container-without-halting
+
+# Work with volumes in docker
+
+https://www.nicelydev.com/docker/volume-docker-compose-yml

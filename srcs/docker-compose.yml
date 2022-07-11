@@ -20,9 +20,13 @@ services:
     networks:
       - docker_network
     ports:
+      - "80:80"
       - "443:443"
     volumes:
       - wordpress_data:/var/www/html/wordpress
+
+  # mariadb:
+
 networks:
   docker_network:
 # MYSQL_PASSWORD: ${MYSQL_PASSWORD}
