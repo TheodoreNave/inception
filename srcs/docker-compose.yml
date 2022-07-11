@@ -10,6 +10,7 @@ services:
       - "9000:9000"
     volumes:
       - wordpress_data:/var/www/html/wordpress
+    restart: always
 
   nginx:
     container_name: nginx
@@ -20,10 +21,10 @@ services:
     networks:
       - docker_network
     ports:
-      - "80:80"
       - "443:443"
     volumes:
       - wordpress_data:/var/www/html/wordpress
+    restart: always
 
   # mariadb:
 
@@ -37,5 +38,5 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /Users/theodorenave/Desktop/wordpress
+      device: /Users/tnave/Desktop/wordpress
       o: bind

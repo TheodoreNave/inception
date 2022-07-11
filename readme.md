@@ -18,3 +18,21 @@ https://stackoverflow.com/questions/18861300/how-to-run-nginx-within-a-docker-co
 # Work with volumes in docker
 
 https://www.nicelydev.com/docker/volume-docker-compose-yml
+
+# Entrypoint + CMD
+
+https://aws.amazon.com/fr/blogs/france/demystifier-entrypoint-et-cmd-dans-docker/
+
+# PHP
+
+https://wiki.alpinelinux.org/wiki/Production_LAMP_system:_Lighttpd_%2B_PHP_%2B_MySQL
+
+# Localhost / httpd
+
+https://wiki.alpinelinux.org/wiki/Lighttpd
+
+# Tuto nginx
+
+https://wiki.alpinelinux.org/wiki/Nginx
+
+https://www.cyberciti.biz/faq/how-to-install-php-7-fpm-on-alpine-linux/

@@ -1,22 +1,27 @@
-FROM 		alpine:3.16
+FROM 			alpine:3.13
 
-RUN 		apt-get update \
- 			&& apt-get upgrade -y \
-			&&  apt-get install nginx -y \
-			&&  apt-get install sudo -y \
-			&& apt-get install vim -y \
-			&& apt-get install openssl -y
+RUN 			apk update && apk upgrade && apk add --no-cache \
+				nginx 	\
+				vim 	\
+				openssl
 
-COPY		./conf.sh 				/tmp/
+RUN 			mkdir /etc/nginx/ssl
 
-COPY		./conf/nginx.conf 		/etc/nginx/conf.d
+RUN				openssl req -x509 -nodes -days 365 -newkey \
+					rsa:4096 -subj '/C=FR/ST=75/L=Paris/O=42/CN=tnave' -keyout \
+						/etc/nginx/ssl/tnave.42.fr.key -out /etc/nginx/ssl/tnave.42.fr.pem
 
-RUN			openssl req -x509 -nodes -days 365 -newkey \
-				rsa:2048 -subj '/C=FR/ST=75/L=Paris/O=42/CN=tnave' -keyout \
-					/etc/ssl/certs/tnave.42.fr.key -out /etc/ssl/certs/tnave.42.fr.crt
+RUN				mkdir -p run/nginx
 
-# CMD 		bash /tmp/conf.sh
+#pid a determiner
 
-EXPOSE 		443
+# if [ ! -d /run/nginx ]; then
 
-CMD 		["nginx", "-g", "daemon off;"]'
+# mkdir /run/nginx
+# +fi
+
+COPY			./conf/nginx.conf 		/etc/nginx/http.d/default.conf
+
+# EXPOSE 			443
+
+ENTRYPOINT 		[ "nginx", "-g", "daemon off;" ]

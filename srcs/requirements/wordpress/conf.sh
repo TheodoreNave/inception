@@ -1,7 +1,6 @@
 #!/bin/bash
 
-service php7.3-fpm start
-
+/usr/sbin/php-fpm7 -F -R
 
 # ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
