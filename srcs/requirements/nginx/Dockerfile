@@ -18,6 +18,7 @@ RUN				mkdir -p /run/nginx
 # if [ ! -d /run/nginx ]; then
 
 # mkdir /run/nginx
+
 # +fi
 
 COPY			./conf/nginx.conf 		/etc/nginx/http.d/default.conf

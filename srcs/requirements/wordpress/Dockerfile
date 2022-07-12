@@ -3,6 +3,7 @@ FROM 		alpine:3.15
 RUN 		apk update && apk upgrade && apk add --no-cache \
 			wget 				\
 			tar 				\
+			mariadb-client		\
 			php7				\
 			php7-bcmath 		\
 			php7-bz2 			\
@@ -43,11 +44,6 @@ RUN 		apk update && apk upgrade && apk add --no-cache \
 			php7-sqlite3		\
 			php7-zlib	
 		
-# RUN 		wget https://files.phpmyadmin.net/phpMyAdmin/5.1.0/phpMyAdmin-5.1.0-all-languages.tar.gz
-
-# RUN 		tar -xf phpMyAdmin-5.1.0-all-languages.tar.gz \
-# 			&& rm -rf phpMyAdmin-5.1.0-all-languages.tar.gz \
-# 			&& mv phpMyAdmin-5.1.0-all-languages ../usr/share/phpmyadmin/ 
 
 WORKDIR 	/var/www/html/
 
@@ -55,20 +51,16 @@ RUN 		wget https://wordpress.org/latest.tar.gz
 
 RUN 		tar -xf latest.tar.gz \
 			&& rm -rf latest.tar.gz
-# RUN		ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
-WORKDIR 	/
+# WORKDIR 	/
 
 RUN			adduser -S nginx &&	addgroup -S nginx
 
 COPY 		./conf/www.conf 		/etc/php7/php-fpm.d/www.conf
 COPY 		./conf/php-fpm.conf 	/etc/php7/php-fpm.conf
 
-# RUN 		wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-# RUN 		chmod +x wp-cli.phar
-# RUN 		cp wp-cli.phar /usr/bin/wp
-
 # EXPOSE 		9000
+WORKDIR /var/www/html/wordpress
 COPY		./conf.sh 				/tmp/
 
 ENTRYPOINT [ "sh", "/tmp/conf.sh"]

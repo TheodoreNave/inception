@@ -3,19 +3,19 @@ services:
   wordpress:
     container_name: wordpress
     build: requirements/wordpress
-    image: wordpress:inception
+    depends_on:
+      - mariadb
     networks:
       - docker_network
     ports:
       - "9000:9000"
     volumes:
-      - wordpress_data:/var/www/html/wordpress
+      - "wordpress_data:/var/www/html/wordpress"
     restart: always
 
   nginx:
     container_name: nginx
     build: requirements/nginx
-    image: nginx:inception
     depends_on:
       - wordpress
     networks:
@@ -26,17 +26,31 @@ services:
       - wordpress_data:/var/www/html/wordpress
     restart: always
 
-  # mariadb:
+  mariadb:
+    container_name: mariadb
+    build: requirements/mariadb
+    volumes:
+      - "mariadb_data:/var/lib/mysql"
+    ports:
+      - "3306:3306"
+    networks:
+      - docker_network
+    restart: always
 
 networks:
   docker_network:
-# MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-# Same for others value into .env
 
 volumes:
   wordpress_data:
     driver: local
     driver_opts:
       type: none
-      device: /Users/tnave/Desktop/wordpress
+      device: /Users/theodorenave/Desktop/wordpress
+      o: bind
+
+  mariadb_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: /Users/theodorenave/Desktop/mariadb
       o: bind

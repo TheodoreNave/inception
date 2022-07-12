@@ -1,8 +1,7 @@
 #!/bin/bash
 
-/usr/sbin/php-fpm7 -F -R
 
-# ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+/usr/sbin/php-fpm7 -F -R
 
 while true;
     do sleep 10000;

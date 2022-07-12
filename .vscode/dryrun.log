@@ -1,7 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/tnave/Desktop/inception'
+make: Entering directory `/Users/theodorenave/Desktop/inception 2'
+make: Leaving directory `/Users/theodorenave/Desktop/inception 2'
  
 make: *** No targets.  Stop.
 
-make: Leaving directory `/Users/tnave/Desktop/inception'
- 
