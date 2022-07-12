@@ -36,3 +36,21 @@ https://wiki.alpinelinux.org/wiki/Lighttpd
 https://wiki.alpinelinux.org/wiki/Nginx
 
 https://www.cyberciti.biz/faq/how-to-install-php-7-fpm-on-alpine-linux/
+
+# How To Create an SSL Certificate on Nginx
+
+https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04
+
+# SSL Cipher
+
+https://cheapsslsecurity.com/p/everything-you-need-to-know-about-an-ssl-cipher-cipher-lists/#:~:text=An%20SSL%20cipher%2C%20or%20an,connecting%20to%20(your%20website).
+
+# php-fp.conf
+
+https://myjeeva.com/php-fpm-configuration-101.html#pool-directives
+
+https://www.php.net/manual/en/install.fpm.configuration.php
+
+# secure
+
+https://help.dreamhost.com/hc/en-us/articles/222784068-The-most-important-steps-to-take-to-make-an-nginx-server-more-secure
