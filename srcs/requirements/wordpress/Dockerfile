@@ -2,6 +2,7 @@ FROM 		alpine:3.15
 
 RUN 		apk update && apk upgrade && apk add --no-cache \
 			wget 											\
+			curl 											\
 			tar 											\
 			mariadb-client									\
 			php7											\
@@ -43,24 +44,33 @@ RUN 		apk update && apk upgrade && apk add --no-cache \
 			php7-zip 										\
 			php7-sqlite3									\
 			php7-zlib	
+
 		
+RUN     	curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
+        	chmod +x wp-cli.phar && \
+       		cp wp-cli.phar /usr/bin/wp
 
-WORKDIR 	/var/www/html/
+# WORKDIR 	/var/www/html
 
-RUN 		wget https://wordpress.org/latest.tar.gz
+# RUN 		wget https://wordpress.org/latest.tar.gz
 
-RUN 		tar -xf latest.tar.gz \
-			&& rm -rf latest.tar.gz
+# RUN 		tar -xf latest.tar.gz \
+# 			&& rm -rf latest.tar.gz
 
 # WORKDIR 	/
-
+# WORKDIR /var/www/html/wordpress
+WORKDIR /var/www/html/wordpress/
 RUN			adduser -S nginx &&	addgroup -S nginx
 
 COPY 		./conf/www.conf 		/etc/php7/php-fpm.d/www.conf
 COPY 		./conf/php-fpm.conf 	/etc/php7/php-fpm.conf
+COPY 		./conf/wp-config.php 	/var/www/html/wordpress/
+
+# RUN     	chmod -R 755 /var/www/
+#check if exist in etc
 
 # EXPOSE 		9000
-WORKDIR /var/www/html/wordpress
+# WORKDIR /var/www/html/wordpress
 COPY		./conf.sh 				/tmp/
 
 ENTRYPOINT [ "sh", "/tmp/conf.sh"]

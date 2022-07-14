@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Wed Jul 13 14:03:50 2022
+
+# Make data base, printed on Thu Jul 14 14:00:58 2022
 
 # Variables
 
@@ -26,7 +29,7 @@ CURDIR := /Users/theodorenave/Desktop/inception 2
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"13937c2d711ee67d0a12bab7770373d5.fr","_translationsConfigFile":"/Users/theodorenave/Library/Application Support/Code/clp/13937c2d711ee67d0a12bab7770373d5.fr/tcf.json","_cacheRoot":"/Users/theodorenave/Library/Application Support/Code/clp/13937c2d711ee67d0a12bab7770373d5.fr","_resolvedLanguagePackCoreLocation":"/Users/theodorenave/Library/Application Support/Code/clp/13937c2d711ee67d0a12bab7770373d5.fr/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9","_corruptedFile":"/Users/theodorenave/Library/Application Support/Code/clp/13937c2d711ee67d0a12bab7770373d5.fr/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"8e1a08857df44efaeace20a1f4372f40.fr","_translationsConfigFile":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/tcf.json","_cacheRoot":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr","_resolvedLanguagePackCoreLocation":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a","_corruptedFile":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 1)
@@ -58,7 +61,7 @@ HOME = /Users/theodorenave
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/theodorenave/Library/Application Support/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+VSCODE_CODE_CACHE_PATH = /Users/theodorenave/Library/Application Support/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # environment
 LOGNAME = theodorenave
 # environment
@@ -96,7 +99,7 @@ TMPDIR = /var/folders/y6/jc9jwjv95q54nbkh2k5z92w80000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/theodorenave/Library/Application Support/Code/1.69.0-main.sock
+VSCODE_IPC_HOOK = /Users/theodorenave/Library/Application Support/Code/1.69.1-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -106,7 +109,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.2498193.2498199
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.2978971.2978977
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -136,7 +139,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2123
+VSCODE_PID = 8548
 # variable set hash-table stats:
 # Load=63/1024=6%, Rehash=0, Collisions=1/86=1%
 
@@ -216,8 +219,6 @@ start:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jul 13 14:03:50 2022
+# Finished Make data base on Thu Jul 14 14:00:58 2022
 
  
-make: *** No rule to make target `all'.  Stop.
-
