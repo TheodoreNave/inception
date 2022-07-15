@@ -1,7 +1,13 @@
 USE mysql;
+-- FLUSH PRIVILEGES;
+-- DELETE FROM	mysql.user WHERE User='';
+-- DROP DATABASE test;
+-- DELETE FROM mysql.db WHERE Db='test';
+-- DELETE FROM mysql.user WHERE User='theodorenave' AND Host NOT IN ('localhost', '127.0.0.1', '::1');
 FLUSH PRIVILEGES;
-ALTER USER 'root'@'localhost' IDENTIFIED BY '$MYSQL_ROOT_PASSWORD';
-CREATE DATABASE $WP_DATABASE CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE USER '$WP_ROOT_USR'@'%' IDENTIFIED by '$WP_ROOT_PASSWORD';
-GRANT ALL PRIVILEGES ON $WP_DATABASE.* TO '$WP_ROOT_USR'@'%';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
+CREATE DATABASE wordpress CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE USER 'root'@'%' IDENTIFIED by 'root';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'%';
+-- grant ALL PRIVILEGES on *.* to tnave@wordpress.srcs_docker_network identified by 'tnave' with grant option;
 FLUSH PRIVILEGES;

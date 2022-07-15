@@ -4,6 +4,8 @@ RUN 		apk update && apk upgrade && apk add --no-cache \
 			wget 											\
 			curl 											\
 			tar 											\
+			zsh												\
+			git 											\
 			mariadb-client									\
 			php7											\
 			php7-bcmath 									\
@@ -45,32 +47,31 @@ RUN 		apk update && apk upgrade && apk add --no-cache \
 			php7-sqlite3									\
 			php7-zlib	
 
+RUN 		sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 		
-RUN     	curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
-        	chmod +x wp-cli.phar && \
-       		cp wp-cli.phar /usr/bin/wp
+RUN			wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
+			&& chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp && chmod +x /usr/local/bin/wp
 
-# WORKDIR 	/var/www/html
+WORKDIR 	/var/www/html
 
 # RUN 		wget https://wordpress.org/latest.tar.gz
 
 # RUN 		tar -xf latest.tar.gz \
-# 			&& rm -rf latest.tar.gz
+			# && rm -rf latest.tar.gz
 
-# WORKDIR 	/
-# WORKDIR /var/www/html/wordpress
-WORKDIR /var/www/html/wordpress/
+# RUN 		cd wordpress/ && rm -rf wp-config-sample.php
+
+WORKDIR 	/var/www/html/wordpress/
 RUN			adduser -S nginx &&	addgroup -S nginx
 
 COPY 		./conf/www.conf 		/etc/php7/php-fpm.d/www.conf
 COPY 		./conf/php-fpm.conf 	/etc/php7/php-fpm.conf
-COPY 		./conf/wp-config.php 	/var/www/html/wordpress/
+COPY 		./conf/wp-config.php 	/var/www/html/wordpress/wp-config.php
 
-# RUN     	chmod -R 755 /var/www/
+RUN     	chmod -R 755 /var/www/
 #check if exist in etc
 
 # EXPOSE 		9000
-# WORKDIR /var/www/html/wordpress
-COPY		./conf.sh 				/tmp/
+COPY		./conf.sh 				/tmp/conf.sh
 
 ENTRYPOINT [ "sh", "/tmp/conf.sh"]
