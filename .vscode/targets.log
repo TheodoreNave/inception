@@ -6,8 +6,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Fri Jul 15 13:16:54 2022
+# Make data base, printed on Tue Jul 19 14:39:53 2022
 
 # Variables
 
@@ -22,21 +23,23 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/theodorenave/Desktop/inception 2
+CURDIR := /Users/tnave/Desktop/inception
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"8e1a08857df44efaeace20a1f4372f40.fr","_translationsConfigFile":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/tcf.json","_cacheRoot":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr","_resolvedLanguagePackCoreLocation":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a","_corruptedFile":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-__CFBundleIdentifier = com.microsoft.VSCode
+P9K_SSH = 0
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.EHLVKoz3Tv/Render
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
@@ -44,27 +47,27 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.xBv4mrIzCE/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.VDfAVqzPF2/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/theodorenave/Desktop/inception 2
+PWD = /Users/tnave/Desktop/inception
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/theodorenave
+HOME = /Users/tnave
 # default
-MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/theodorenave/Library/Application Support/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+VSCODE_CODE_CACHE_PATH = /Users/tnave/Library/Application Support/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
 # environment
-LOGNAME = theodorenave
+LOGNAME = tnave
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-ZSH = /Users/theodorenave/.oh-my-zsh
+ZSH = /Users/tnave/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -80,23 +83,25 @@ SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
-USER = theodorenave
+USER = tnave
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 1)
+NAME = Inception
 # environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
-MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/y6/jc9jwjv95q54nbkh2k5z92w80000gn/T/
+TMPDIR = /var/folders/m9/3sv3v35d5qsf8w2gs04188hc0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/theodorenave/Library/Application Support/Code/1.69.1-main.sock
+VSCODE_IPC_HOOK = /Users/tnave/Library/Application Support/Code/1.69.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -106,25 +111,27 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.2978971.2978977
+MAIL = tnave@student.42.fr
+# environment
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000004.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
-__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x1
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
 COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
-# makefile (from `Makefile', line 1)
-PROJECT_NAME = "Inception"
 # environment
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a8
 # automatic
 ^F = $(notdir $^)
 # default
@@ -136,9 +143,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 8548
+VSCODE_PID = 295
 # variable set hash-table stats:
-# Load=63/1024=6%, Rehash=0, Collisions=1/86=1%
+# Load=66/1024=6%, Rehash=0, Collisions=1/90=1%
 
 # Pattern-specific Variable Values
 
@@ -146,7 +153,7 @@ VSCODE_PID = 8548
 
 # Directories
 
-# . (device 16777224, inode 2920135): 8 files, no impossibilities.
+# . (device 16777228, inode 12906069834): 8 files, no impossibilities.
 
 # 8 files, no impossibilities in 1 directories.
 
@@ -160,18 +167,32 @@ stop:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+tnave@42.fr":
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-all:
-#  Command-line target.
-#  Implicit rule search has been done.
-#  File does not exist.
+>>:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
+
+all: prune reload
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-.PHONY: start stop
+.PHONY: start stop clean reload all
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -185,17 +206,38 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-12 14:46:48
+#  Last modified 2022-07-17 15:59:30
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-start:
+start: echo "127.0.0.1 tnave@42.fr" >> /etc/hosts
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
+
+# Not a target:
+/etc/hosts:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+reload:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+prune: clean
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .DEFAULT:
@@ -203,8 +245,27 @@ start:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+echo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: stop
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+"127.0.0.1:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/21=0%
+# Load=15/1024=1%, Rehash=0, Collisions=0/42=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -216,8 +277,6 @@ start:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Jul 15 13:16:54 2022
+# Finished Make data base on Tue Jul 19 14:39:53 2022
 
  
-make: *** No rule to make target `all'.  Stop.
-

@@ -47,31 +47,22 @@ RUN 		apk update && apk upgrade && apk add --no-cache \
 			php7-sqlite3									\
 			php7-zlib	
 
-RUN 		sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# RUN 		sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 		
 RUN			wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
 			&& chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp && chmod +x /usr/local/bin/wp
-
-WORKDIR 	/var/www/html
-
-# RUN 		wget https://wordpress.org/latest.tar.gz
-
-# RUN 		tar -xf latest.tar.gz \
-			# && rm -rf latest.tar.gz
-
-# RUN 		cd wordpress/ && rm -rf wp-config-sample.php
 
 WORKDIR 	/var/www/html/wordpress/
 RUN			adduser -S nginx &&	addgroup -S nginx
 
 COPY 		./conf/www.conf 		/etc/php7/php-fpm.d/www.conf
 COPY 		./conf/php-fpm.conf 	/etc/php7/php-fpm.conf
-COPY 		./conf/wp-config.php 	/var/www/html/wordpress/wp-config.php
+# COPY 		./conf/wp-config.php 	/var/www/html/wordpress/wp-config.php
 
 RUN     	chmod -R 755 /var/www/
 #check if exist in etc
 
-# EXPOSE 		9000
+EXPOSE 		9000
 COPY		./conf.sh 				/tmp/conf.sh
 
 ENTRYPOINT [ "sh", "/tmp/conf.sh"]
