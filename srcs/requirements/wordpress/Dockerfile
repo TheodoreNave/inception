@@ -57,12 +57,10 @@ RUN			adduser -S nginx &&	addgroup -S nginx
 
 COPY 		./conf/www.conf 		/etc/php7/php-fpm.d/www.conf
 COPY 		./conf/php-fpm.conf 	/etc/php7/php-fpm.conf
-# COPY 		./conf/wp-config.php 	/var/www/html/wordpress/wp-config.php
 
 RUN     	chmod -R 755 /var/www/
-#check if exist in etc
 
-EXPOSE 		9000
+# EXPOSE 		9000
 COPY		./conf.sh 				/tmp/conf.sh
 
 ENTRYPOINT [ "sh", "/tmp/conf.sh"]

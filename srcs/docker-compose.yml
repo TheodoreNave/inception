@@ -13,14 +13,16 @@ services:
       - "wordpress_data:/var/www/html/wordpress"
     restart: always
     environment:
-      MYSQL_ROOT_HOST: ${MYSQL_ROOT_HOST}
-      MYSQL_DB_NAME: ${MYSQL_DB_NAME}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_USER_PASSWORD: ${MYSQL_USER_PASSWORD}
-      WORDPRESS_ADMIN_USER: ${WORDPRESS_ADMIN_USER}
-      WORDPRESS_ADMIN_PASSWORD: ${WORDPRESS_ADMIN_PASSWORD}
-      WORDPRESS_USER: ${WORDPRESS_USER}
-      WORDPRESS_PASSWORD: ${WORDPRESS_PASSWORD}
+      MYSQL_HOST: ${MYSQL_HOST}
+      WP_DATABASE_NAME: ${WP_DATABASE_NAME}
+      WP_DATABASE_USR: ${WP_DATABASE_USR}
+      WP_DATABASE_PWD: ${WP_DATABASE_PWD}
+      WP_ADMIN_USR: ${WP_ADMIN_USR}
+      WP_ADMIN_PWD: ${WP_ADMIN_PWD}
+      WP_USR: ${WP_USR}
+      WP_PWD: ${WP_PWD}
+      WP_TITLE: ${WP_TITLE}
+      WP_EMAIL: ${WP_EMAIL}
 
   nginx:
     container_name: nginx
@@ -46,10 +48,10 @@ services:
       - docker_network
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DB_NAME: ${MYSQL_DB_NAME}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_USER_PASSWORD: ${MYSQL_USER_PASSWORD}
+      MYSQL_ROOT_PWD: ${MYSQL_ROOT_PWD}
+      WP_DATABASE_NAME: ${WP_DATABASE_NAME}
+      WP_DATABASE_USR: ${WP_DATABASE_USR}
+      WP_DATABASE_PWD: ${WP_DATABASE_PWD}
 
 networks:
   docker_network:
@@ -58,12 +60,12 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /Users/tnave/Desktop/wordpress
+      device: /Users/theodorenave/Desktop/inception/wordpress
       o: bind
 
   mariadb_data:
     driver: local
     driver_opts:
       type: none
-      device: /Users/tnave/Desktop/mariadb
+      device: /Users/theodorenave/Desktop/inception/mariadb
       o: bind

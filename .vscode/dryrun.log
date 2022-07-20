@@ -1,5 +1,9 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/tnave/Desktop/inception'
-make: Nothing to be done for `all'.
-make: Leaving directory `/Users/tnave/Desktop/inception'
+make: Entering directory `/Users/theodorenave/Desktop/ince 2'
+docker-compose stop
+rm -rf ~/Desktop/inception
+docker-compose -f srcs/docker-compose.yml down --rmi all -v \
+		&& docker system prune -f
+docker-compose up --build
+make: Leaving directory `/Users/theodorenave/Desktop/ince 2'
  

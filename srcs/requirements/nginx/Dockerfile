@@ -13,14 +13,6 @@ RUN				openssl req -x509 -nodes -days 365 -newkey \
 
 RUN				mkdir -p /run/nginx
 
-#pid a determiner
-
-# if [ ! -d /run/nginx ]; then
-
-# mkdir /run/nginx
-
-# +fi
-
 COPY			./conf/nginx.conf 		/etc/nginx/http.d/default.conf
 
 # EXPOSE 			443

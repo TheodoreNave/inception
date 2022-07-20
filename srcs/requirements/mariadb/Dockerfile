@@ -6,8 +6,6 @@ RUN 			apk update && apk upgrade && apk add --no-cache \
 				mariadb-client									\
 				vim				
 
-COPY 			./conf/setup.sql		/tmp/setup.sql
-
 COPY 			./conf/conf.sh 			/tmp/conf.sh
 
 # EXPOSE 			3306		
