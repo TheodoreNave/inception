@@ -7,8 +7,8 @@ conf:
 
 start: 	
 		mkdir -p ~/Desktop/inception \
-		mkdir ~/Desktop/inception/wordpress \
-		mkdir ~/Desktop/inception/mariadb \
+		&& mkdir ~/Desktop/inception/wordpress \
+		&& mkdir ~/Desktop/inception/mariadb \
 		&& docker-compose -f srcs/docker-compose.yml up --build
 
 run:
