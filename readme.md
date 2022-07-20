@@ -54,3 +54,7 @@ https://www.php.net/manual/en/install.fpm.configuration.php
 # secure
 
 https://help.dreamhost.com/hc/en-us/articles/222784068-The-most-important-steps-to-take-to-make-an-nginx-server-more-secure
+
+# nginx
+
+https://stackoverflow.com/questions/18861300/how-to-run-nginx-within-a-docker-container-without-halting

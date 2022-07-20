@@ -1,8 +1,8 @@
 FROM 			alpine:3.15
 
 RUN 			apk update && apk upgrade && apk add --no-cache \
-				nginx 	\
-				vim 	\
+				nginx 											\
+				vim 											\
 				openssl
 
 RUN 			mkdir /etc/nginx/ssl
@@ -13,8 +13,6 @@ RUN				openssl req -x509 -nodes -days 365 -newkey \
 
 RUN				mkdir -p /run/nginx
 
-COPY			./conf/nginx.conf 		/etc/nginx/http.d/default.conf
-
-# EXPOSE 			443
+COPY			./conf/nginx.conf		/etc/nginx/http.d/default.conf
 
 ENTRYPOINT 		[ "nginx", "-g", "daemon off;" ]

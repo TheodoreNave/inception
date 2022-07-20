@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Add while
+
 sleep 5
 
 if [ ! -f "/var/www/html/wordpress/wp-config.php" ]; then
