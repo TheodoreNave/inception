@@ -60,12 +60,12 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /Users/theodorenave/Desktop/inception/wordpress
+      device: /Users/theodorenave/Desktop/inception_files/wordpress
       o: bind
 
   mariadb_data:
     driver: local
     driver_opts:
       type: none
-      device: /Users/theodorenave/Desktop/inception/mariadb
+      device: /Users/theodorenave/Desktop/inception_files/mariadb
       o: bind

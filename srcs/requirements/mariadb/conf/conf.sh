@@ -14,6 +14,7 @@ if [ ! -d /var/lib/mysql/mysql ]; then
   	mysql_install_db --basedir=/usr --datadir=/var/lib/mysql --user=mysql --rpm > /dev/null
 
 	setup=`mktemp`
+
 	if [ ! -f "$setup" ]; then
 		return 1
 	fi
