@@ -58,3 +58,7 @@ https://help.dreamhost.com/hc/en-us/articles/222784068-The-most-important-steps-
 # nginx
 
 https://stackoverflow.com/questions/18861300/how-to-run-nginx-within-a-docker-container-without-halting
+
+# Others
+
+https://www.kisphp.com/docker/docker-compose-for-php-nginx-and-mysql
