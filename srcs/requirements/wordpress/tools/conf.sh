@@ -15,7 +15,7 @@ if [ ! -f "/var/www/html/wordpress/wp-config.php" ]; then
 					 --dbcharset="utf8" --dbcollate="utf8_general_ci" --allow-root
 
 	# Install Wordpress and create Admin
-	wp core install  --url=tnave.42.fr --title=$WP_TITLE --admin_user=$WP_ADMIN_USR \
+	wp core install  --url=$DOMAIN_NAME --title=$WP_TITLE --admin_user=$WP_ADMIN_USR \
 					 --admin_password=$WP_ADMIN_PWD --admin_email=$WP_EMAIL 		\
 					 --skip-email --allow-root
 

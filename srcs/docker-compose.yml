@@ -48,7 +48,7 @@ services:
       - docker_network
     restart: always
     environment:
-      MYSQL_ROOT_PWD: ${MYSQL_ROOT_PWD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       WP_DATABASE_NAME: ${WP_DATABASE_NAME}
       WP_DATABASE_USR: ${WP_DATABASE_USR}
       WP_DATABASE_PWD: ${WP_DATABASE_PWD}

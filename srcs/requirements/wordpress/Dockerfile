@@ -55,6 +55,6 @@ COPY 		./conf/php-fpm.conf 	/etc/php7/php-fpm.conf
 
 RUN     	chmod -R 755 /var/www/
 
-COPY		./conf.sh 				/tmp/conf.sh
+COPY		./tools/conf.sh 				/tmp/conf.sh
 
 ENTRYPOINT [ "sh", "/tmp/conf.sh"]

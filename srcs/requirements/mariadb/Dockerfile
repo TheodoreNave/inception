@@ -5,7 +5,7 @@ RUN 			apk update && apk upgrade && apk add --no-cache \
 				mariadb-common									\
 				mariadb-client
 
-COPY 			./conf/conf.sh 			/tmp/conf.sh
+COPY 			./tools/conf.sh 			/tmp/conf.sh
 
 
 ENTRYPOINT 		[ "sh", "/tmp/conf.sh" ]

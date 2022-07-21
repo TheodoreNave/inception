@@ -62,3 +62,7 @@ https://stackoverflow.com/questions/18861300/how-to-run-nginx-within-a-docker-co
 # Others
 
 https://www.kisphp.com/docker/docker-compose-for-php-nginx-and-mysql
+
+# php with php fpm
+
+https://linuxiac.com/how-to-configure-nginx-to-work-with-php-via-php-fpm/
