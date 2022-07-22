@@ -7,7 +7,7 @@ if [ ! -d "/run/mysqld" ]; then
 
 fi
 
-if [ ! -d /var/lib/mysql/mysql ]; then
+if [ ! -d "/var/lib/mysql/mysql" ]; then
 
 	touch	/var/lib/mysql/mysql.sock
   	chown -R mysql:mysql /var/lib/mysql

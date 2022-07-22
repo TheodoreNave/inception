@@ -1,8 +1,6 @@
 NAME = Inception
 
-all:	conf start
-
-re: 	prune start
+all:	prune start
 
 conf: 
 		echo "127.0.0.1 tnave@42.fr" >> /etc/hosts
@@ -26,4 +24,6 @@ prune:	clean
 		docker-compose -f srcs/docker-compose.yml down --rmi all -v \
 		&& docker system prune -f
 
-.PHONY: conf start stop clean prune run all create re
+.PHONY: conf start stop clean prune run all create
+
+

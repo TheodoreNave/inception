@@ -10,6 +10,8 @@ RUN				openssl req -x509 -nodes -days 365 -newkey \
 					rsa:4096 -subj '/C=FR/ST=75/L=Paris/O=42/CN=tnave' -keyout \
 						/etc/nginx/ssl/tnave.42.fr.key -out /etc/nginx/ssl/tnave.42.fr.pem
 
+RUN 			chown -R nginx:nginx /var/www
+
 RUN				mkdir -p /run/nginx
 
 COPY			./conf/nginx.conf		/etc/nginx/http.d/default.conf
