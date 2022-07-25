@@ -2,13 +2,10 @@ NAME = Inception
 
 all:	prune start
 
-conf: 
-		echo "127.0.0.1 tnave@42.fr" >> /etc/hosts
-
 start: 	
-		mkdir -p ~/Home/data \
-		&& mkdir ~/Home/data/wordpress \
-		&& mkdir ~/Home/data/mariadb \
+		mkdir -p /home/tnave/data \
+		&& mkdir /home/tnave/data/wordpress \
+		&& mkdir /home/tnave/data/mariadb \
 		&& docker-compose -f srcs/docker-compose.yml up --build
 
 run:
@@ -18,12 +15,12 @@ stop:
 		docker-compose -f srcs/docker-compose.yml down
 
 clean:	stop
-		rm -rf	~/Home/data
+		rm -rf	/home/tnave/data
 
 prune:	clean
 		docker-compose -f srcs/docker-compose.yml down --rmi all -v \
 		&& docker system prune -f
 
-.PHONY: conf start stop clean prune run all create
+.PHONY: start stop clean prune run all create
 
 
