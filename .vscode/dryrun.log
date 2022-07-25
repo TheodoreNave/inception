@@ -1,9 +1,12 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/theodorenave/Desktop/inception'
-echo "127.0.0.1 tnave@42.fr" >> /etc/hosts
-mkdir -p ~/Desktop/inception_files \
-		&& mkdir ~/Desktop/inception_files/wordpress \
-		&& mkdir ~/Desktop/inception_files/mariadb \
-		&& docker-compose -f srcs/docker-compose.yml up --build
-make: Leaving directory `/Users/theodorenave/Desktop/inception'
+make: Entering directory '/mnt/nfs/homes/tnave/Desktop/inception'
+docker-compose -f srcs/docker-compose.yml down
+rm -rf	~/Home/Data
+docker-compose -f srcs/docker-compose.yml down --rmi all -v \
+	&& docker system prune -f
+mkdir -p ~/Home/Data \
+	&& mkdir ~/Home/Data/wordpress \
+	&& mkdir ~/Home/Data/mariadb \
+	&& docker-compose -f srcs/docker-compose.yml up --build
+make: Leaving directory '/mnt/nfs/homes/tnave/Desktop/inception'
  

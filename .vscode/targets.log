@@ -1,13 +1,12 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 3.81
-# Copyright (C) 2006  Free Software Foundation, Inc.
-# This is free software; see the source for copying conditions.
-# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
 
-# This program built for i386-apple-darwin11.3.0
-
-# Make data base, printed on Fri Jul 22 15:22:56 2022
+# Make data base, printed on Mon Jul 25 14:14:50 2022
 
 # Variables
 
@@ -16,153 +15,225 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
-# automatic
-@F = $(notdir $@)
+# environment
+XAUTHORITY = /mnt/nfs/homes/tnave/.Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /Users/theodorenave/Desktop/inception
+CURDIR := /mnt/nfs/homes/tnave/Desktop/inception
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"8e1a08857df44efaeace20a1f4372f40.fr","_translationsConfigFile":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/tcf.json","_cacheRoot":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr","_resolvedLanguagePackCoreLocation":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/3b889b090b5ad5793f524b5d1d39fda662b96a2a","_corruptedFile":"/Users/theodorenave/Library/Application Support/Code/clp/8e1a08857df44efaeace20a1f4372f40.fr/corrupted.info","_languagePackSupport":true}
+VTE_VERSION = 6003
 # environment
-_ = /usr/bin/make
-# makefile (from `Makefile', line 1)
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/code
+# environment
+JOURNAL_STREAM = 9:1046258
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
 # environment
-__CFBundleIdentifier = com.microsoft.VSCode
+IM_CONFIG_PHASE = 1
+# 'override' directive
+GNUMAKEFLAGS := 
 # environment
-VSCODE_CWD = /Users/theodorenave/Desktop/inception
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/tnave/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/39190/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+MANAGERPID = 215731
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/39190/vscode-ipc-fd947538-aa99-44d4-92e1-531b4fcb94e3.sock
+# environment
+VSCODE_CWD = /mnt/nfs/homes/tnave/Desktop/inception
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session5
+# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_39190_jTZTzZ
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /mnt/nfs/homes/tnave/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/39190/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-ELECTRON_RUN_AS_NODE = 1
-# default
-.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+SESSION_MANAGER = local/e1r12p16.clusters.42paris.fr:@/tmp/.ICE-unix/216247,unix/e1r12p16.clusters.42paris.fr:/tmp/.ICE-unix/216247
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.xBv4mrIzCE/Listeners
+XDG_RUNTIME_DIR = /run/user/39190
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = cb975d48bdde485d90d30ca603dcfcc0
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/tnave
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/39190/keyring/ssh
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/theodorenave/Desktop/inception
+DISPLAY = :0
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /mnt/nfs/homes/tnave/Desktop/inception
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 216210
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/theodorenave
-# default
-MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+HOME = /mnt/nfs/homes/tnave
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/theodorenave/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/tnave/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
-LOGNAME = theodorenave
+LOGNAME = tnave
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-ZSH = /Users/theodorenave/.oh-my-zsh
+ZSH = /mnt/nfs/homes/tnave/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-XPC_FLAGS = 0x0
+MAKELEVEL := 0
 # environment
 COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
-# environment
-LC_TERMINAL = iTerm2
-# environment
-SHLVL = 3
-# default
-MAKE_VERSION := 3.81
-# environment
-USER = theodorenave
-# makefile
-.DEFAULT_GOAL := all
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t0p0:D2DA2B68-C113-4B8D-B83B-4ECD051402B6
-# makefile (from `Makefile', line 1)
-NAME = Inception
+QT_IM_MODULE = ibus
+# environment
+SHLVL = 2
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = tnave
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
 # environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
-MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+MAKE_COMMAND := make
 # environment
-TERM_PROGRAM = iTerm.app
+OLDPWD = /mnt/nfs/homes/tnave/Desktop
 # default
 .VARIABLES := 
-# environment
-TMPDIR = /var/folders/y6/jc9jwjv95q54nbkh2k5z92w80000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/theodorenave/Library/Application Support/Code/1.69.2-main.sock
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
-MallocNanoZone = 0
+VSCODE_IPC_HOOK = /run/user/39190/vscode-070db602-1.68.1-main.sock
 # makefile
-MAKEFLAGS = Rrqp
+MAKEFLAGS = pqrR
 # environment
-MFLAGS = -Rrqp
+MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
-# environment
-TERM_PROGRAM_VERSION = 3.4.15
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.3176329.3176335.3EB95FCE-DB4D-4C4A-91AA-14D721DBD68B
-# environment
-LC_TERMINAL_VERSION = 3.4.15
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t0p0:D2DA2B68-C113-4B8D-B83B-4ECD051402B6
+QT_ACCESSIBILITY = 1
 # environment
-COLORFGBG = 7;0
-# environment
-__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x1
-# environment
-COMMAND_MODE = unix2003
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
 # environment
-ITERM_PROFILE = Default
-# environment
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/dd68154d_6ff1_4f8e_97da_95cb525df44b
 # automatic
 ^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.107
 # default
 SUFFIXES := 
-# default
-.INCLUDE_DIRS = /usr/local/include
 # environment
-MAKELEVEL := 0
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# makefile (from 'Makefile', line 1)
+NAME = Inception
+# default
+.RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 66923
+DOCKER_HOST = unix:///run/user/39190/docker.sock
+# environment
+VSCODE_PID = 221076
 # variable set hash-table stats:
-# Load=75/1024=7%, Rehash=0, Collisions=4/101=4%
+# Load=111/1024=11%, Rehash=0, Collisions=12/139=9%
 
 # Pattern-specific Variable Values
 
@@ -170,7 +241,7 @@ VSCODE_PID = 66923
 
 # Directories
 
-# . (device 16777224, inode 3210774): 7 files, no impossibilities.
+# . (device 58, inode 224135482): 7 files, no impossibilities.
 
 # 7 files, no impossibilities in 1 directories.
 
@@ -183,109 +254,12 @@ VSCODE_PID = 66923
 stop:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 20):
-	docker-compose -f srcs/docker-compose.yml down
-	
-
-all: conf start
-#  Phony target (prerequisite of .PHONY).
-#  Command-line target.
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
-
-.PHONY: conf start stop clean prune run all create re
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-Makefile:
-#  Implicit rule search has been done.
-#  Last modified 2022-07-21 19:02:00
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-start:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 11):
-	mkdir -p ~/Desktop/inception_files \
-	&& mkdir ~/Desktop/inception_files/wordpress \
-	&& mkdir ~/Desktop/inception_files/mariadb \
-	&& docker-compose -f srcs/docker-compose.yml up --build
-	
-
-create:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-prune: clean
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 26):
-	docker-compose -f srcs/docker-compose.yml down --rmi all -v \
-	&& docker system prune -f
-	
-
-# Not a target:
-.DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-re: prune start
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-run:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 17):
-	docker-compose -f srcs/docker-compose.yml up
-	
-
-clean: stop
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 23):
-	rm -rf	~/Desktop/inception_files
-	
-
-conf:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: `'
+#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
-# @ := conf
+# @ := stop
 # automatic
 # % := 
 # automatic
@@ -301,25 +275,114 @@ conf:
 # automatic
 # ? := 
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/10=10%
-#  commands to execute (from `Makefile', line 8):
-	echo "127.0.0.1 tnave@42.fr" >> /etc/hosts
-	
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 18):
+		docker-compose -f srcs/docker-compose.yml down
+
+all: prune start
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+.PHONY: conf start stop clean prune run all create
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-25 14:14:44.407183132
+#  File has been updated.
+#  Successfully updated.
+
+start:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+		mkdir -p ~/Home/Data \
+		&& mkdir ~/Home/Data/wordpress \
+		&& mkdir ~/Home/Data/mariadb \
+		&& docker-compose -f srcs/docker-compose.yml up --build
+
+create:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+prune: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 24):
+		docker-compose -f srcs/docker-compose.yml down --rmi all -v \
+		&& docker system prune -f
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 15):
+		docker-compose -f srcs/docker-compose.yml up
+
+clean: stop
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 21):
+		rm -rf	~/Home/Data
+
+conf:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 6):
+		echo "127.0.0.1 tnave@42.fr" >> /etc/hosts
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/42=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/38=0%
 # VPATH Search Paths
- 
 
-# No `vpath' search paths.
+# No 'vpath' search paths.
 
-# No general (`VPATH' variable) search path.
+# No general ('VPATH' variable) search path.
 
-# # of strings in strcache: 1
-# # of strcache buffers: 1
-# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
-# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+# strcache buffers: 1 (0) / strings = 20 / storage = 143 B / avg = 7 B
+# current buf: size = 8162 B / used = 143 B / count = 20 / avg = 7 B
 
-# Finished Make data base on Fri Jul 22 15:22:56 2022
+# strcache performance: lookups = 45 / hit rate = 55%
+# hash-table stats:
+# Load=20/8192=0%, Rehash=0, Collisions=1/45=2%
+# Finished Make data base on Mon Jul 25 14:14:50 2022
 
  

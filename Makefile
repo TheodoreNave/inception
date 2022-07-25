@@ -6,9 +6,9 @@ conf:
 		echo "127.0.0.1 tnave@42.fr" >> /etc/hosts
 
 start: 	
-		mkdir -p ~/Desktop/inception_files \
-		&& mkdir ~/Desktop/inception_files/wordpress \
-		&& mkdir ~/Desktop/inception_files/mariadb \
+		mkdir -p ~/Home/data \
+		&& mkdir ~/Home/data/wordpress \
+		&& mkdir ~/Home/data/mariadb \
 		&& docker-compose -f srcs/docker-compose.yml up --build
 
 run:
@@ -18,7 +18,7 @@ stop:
 		docker-compose -f srcs/docker-compose.yml down
 
 clean:	stop
-		rm -rf	~/Desktop/inception_files
+		rm -rf	~/Home/data
 
 prune:	clean
 		docker-compose -f srcs/docker-compose.yml down --rmi all -v \
