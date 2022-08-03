@@ -44,27 +44,27 @@ Go to :
 To run this project, you will need to add the following environment variables to your .env file
 
 * `DOMAIN_NAME`
----
+
 * `MYSQL_ROOT_PASSWORD` 
----
+
 * `MYSQL_HOST`
----
+
 * `WP_DATABASE_NAME`
----
+
 * `WP_DATABASE_USR`
----
+
 * `WP_DATABASE_PWD`
----
+
 * `WP_ADMIN_USR`
----
+
 * `WP_ADMIN_PWD`
----
+
 * `WP_USR`
----
+
 * `WP_PWD`
----
+
 * `WP_TITLE`
----
+
 * `WP_EMAIL`
 
 ## Documentation
@@ -82,6 +82,3 @@ To run this project, you will need to add the following environment variables to
 * [Mariadb](https://github.com/yobasystems/alpine-mariadb)
 
 * [.env](https://towardsdatascience.com/a-complete-guide-to-using-environment-variables-and-files-with-docker-and-compose-4549c21dc6af)
-## How to
-
-* *Coming Soon*
