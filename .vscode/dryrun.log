@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/theodorenave/Desktop/inception'
+docker-compose -f srcs/docker-compose.yml down
+rm -rf	/home/tnave/data
+docker-compose -f srcs/docker-compose.yml down --rmi all -v \
+		&& docker system prune -f
+mkdir -p /home/tnave/data \
+		&& mkdir /home/tnave/data/wordpress \
+		&& mkdir /home/tnave/data/mariadb \
+		&& docker-compose -f srcs/docker-compose.yml up --build
+make: Leaving directory `/Users/theodorenave/Desktop/inception'
+ 
